@@ -36,11 +36,24 @@ class App extends Component {
                         var order = JSON.parse(data.items);
                         var order1 = JSON.stringify(order[0]);
                         var order2 = JSON.parse(order1);
+                        var total1 = ss1[1]+ss2[3]+ss3[5];
+                        var totall1 = JSON.stringify(total1);
+                        var totalll1 = JSON.parse(totall1);
+                        var total2 = ss1[3]+ss2[1]+ss3[5];
+                        var totall2 = JSON.stringify(total2);
+                        var totalll2 = JSON.parse(totall2);
+                        var percent1 = ((ss1[1]+ss2[3]+ss3[5])/order2["qty"])*(100/100);
+                        var percentt1 = JSON.stringify(percent1);
+                        var percenttt1 = JSON.parse(percentt1);
+                        var percent2 = ((ss1[3]+ss2[1]+ss3[5])/order2["qty"])*(100/100);
+                        var percentt2 = JSON.stringify(percent2);
+                        var percenttt2 = JSON.parse(percentt2);
 
+                        
                         return (
                             <tr key={i}>
                                 <td>
-                                    {ss1[1]}{ss2[1]}
+                                    {ss1[1]}{ss2[1]}{console.log(totalll1)}
                                 </td>
                                 <td>
                                     {ss2[3]}{ss1[3]}
@@ -55,10 +68,10 @@ class App extends Component {
                                     {data.productDescription}
                                 </td>
                                 <td>
-                                  {ss1[1]+ss2[3]+ss3[5]}
+                                  {totalll1}{totalll2}
                                 </td>
                                 <td>
-                                  {((ss1[1]+ss2[3]+ss3[5])/order2["qty"])*(100/100)}
+                                  {percenttt1}{percenttt2}
                                 </td>
                                 <td>
                                   {order2["qty"]}
