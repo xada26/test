@@ -48,7 +48,6 @@ class App extends Component {
                         var percent2 = ((ss1[3]+ss2[1]+ss3[5])/order2["qty"])*(100/100);
                         var percentt2 = JSON.stringify(percent2);
                         var percenttt2 = JSON.parse(percentt2);
-
                         
                         return (
                             <tr key={i}>
