@@ -35,7 +35,7 @@ class App extends Component {
                         var ss3 = JSON.parse(stocks3);
                         var order = JSON.parse(data.items);
                         var order1 = JSON.stringify(order[0]);
-                        var order2 = JSON.parse(order1)
+                        var order2 = JSON.parse(order1);
 
                         return (
                             <tr key={i}>
