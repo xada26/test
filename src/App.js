@@ -53,7 +53,7 @@ class App extends Component {
                         return (
                             <tr key={i}>
                                 <td>
-                                    {ss1[1]}{ss2[1]}{console.log(totalll1)}
+                                    {ss1[1]}{ss2[1]}
                                 </td>
                                 <td>
                                     {ss2[3]}{ss1[3]}
