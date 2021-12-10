@@ -32,7 +32,7 @@ class App extends Component {
                         var stocks2 = JSON.stringify(stock[1]);
                         var stocks3 = JSON.stringify(stock[2]);
                         if (typeof stocks3 === 'undefined') {
-                          return null;
+                          return stock[3];
                         }
                         var ss1 = JSON.parse(stocks1);
                         var ss2 = JSON.parse(stocks2);
@@ -46,10 +46,10 @@ class App extends Component {
                         var total2 = ss1[3]+ss2[1]+ss3[5];
                         var totall2 = JSON.stringify(total2);
                         var totalll2 = JSON.parse(totall2);
-                        var percent1 = ((ss1[1]+ss2[3]+ss3[5])/order2["qty"])*(100/100);
+                        var percent1 = (order2["qty"]/total1)*(100/100);
                         var percentt1 = JSON.stringify(percent1);
                         var percenttt1 = JSON.parse(percentt1);
-                        var percent2 = ((ss1[3]+ss2[1]+ss3[5])/order2["qty"])*(100/100);
+                        var percent2 = (order2["qty"]/total2)*(100/100);
                         var percentt2 = JSON.stringify(percent2);
                         var percenttt2 = JSON.parse(percentt2);
                         
