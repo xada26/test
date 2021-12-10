@@ -46,17 +46,17 @@ class App extends Component {
                         var total2 = ss1[3]+ss2[1]+ss3[5];
                         var totall2 = JSON.stringify(total2);
                         var totalll2 = JSON.parse(totall2);
-                        var percent1 = (order2["qty"]/total1)*(100/100);
+                        var percent1 = (order2["qty"]/total1)*(100);
                         var percentt1 = JSON.stringify(percent1);
                         var percenttt1 = JSON.parse(percentt1);
-                        var percent2 = (order2["qty"]/total2)*(100/100);
+                        var percent2 = (order2["qty"]/total2)*(100);
                         var percentt2 = JSON.stringify(percent2);
                         var percenttt2 = JSON.parse(percentt2);
                         
                         return (
                             <tr key={i}>
                                 <td>
-                                    {ss1[1]}{ss2[1]}{console.log(ss1)}
+                                    {ss1[1]}{ss2[1]}{console.log(percenttt1)}
                                 </td>
                                 <td>
                                     {ss2[3]}{ss1[3]}{ss2[5]}
