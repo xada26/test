@@ -32,7 +32,7 @@
             "product_id": "1915",
             "productDescription": "Paper Bag Cititex",
             "categoryDescription": "Marketing Toolkit",
-            "product_stock": "[{\"1\": 100}, {\"3\": 0}, {\"5\": 59}]",
+            "product_stock": "[{\"1\": 100}, {\"5\": 59}]",
             "items": "[{\"qty\": 1, \"productId\": 1915, \"proformaInfoId\": 556745, \"proformaItemId\": 2679287}]"
         },
         {

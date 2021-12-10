@@ -26,10 +26,14 @@ class App extends Component {
                     
                 {
                     data.proformaItem.map((data, i) => {
+                      
                         var stock = JSON.parse(data.product_stock);
                         var stocks1 = JSON.stringify(stock[0]);
                         var stocks2 = JSON.stringify(stock[1]);
                         var stocks3 = JSON.stringify(stock[2]);
+                        if (typeof stocks3 === 'undefined') {
+                          return null;
+                        }
                         var ss1 = JSON.parse(stocks1);
                         var ss2 = JSON.parse(stocks2);
                         var ss3 = JSON.parse(stocks3);
@@ -52,10 +56,10 @@ class App extends Component {
                         return (
                             <tr key={i}>
                                 <td>
-                                    {ss1[1]}{ss2[1]}
+                                    {ss1[1]}{ss2[1]}{console.log(ss1)}
                                 </td>
                                 <td>
-                                    {ss2[3]}{ss1[3]}
+                                    {ss2[3]}{ss1[3]}{ss2[5]}
                                 </td>
                                 <td>
                                     {ss3[5]}
